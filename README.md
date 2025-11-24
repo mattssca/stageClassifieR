@@ -2,7 +2,6 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/yourusername/stageClassifieR/workflows/R-CMD-check/badge.svg)](https://github.com/yourusername/stageClassifieR/actions)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -26,7 +25,7 @@ You can install the development version of stageClassifieR from [GitHub](https:/
 
 ```r
 # install.packages("devtools")
-devtools::install_github("yourusername/stageClassifieR")
+devtools::install_github("mattssca/stageClassifieR")
 ```
 
 ## Dependencies
@@ -153,13 +152,13 @@ The function returns a data frame with three columns:
 
 ### Performance
 
-The classifier was trained and validated on [add your dataset details]:
+The classifier was trained and validated on Uroscanseq data:
 
-- **Training Set**: [N] samples
-- **Validation**: [cross-validation/independent test set]
-- **Accuracy**: [X]%
-- **Sensitivity**: [X]% (MIBC detection)
-- **Specificity**: [X]% (NMIBC detection)
+- **Training Set**: 200 samples (100 NMIBC and 100 MIBC)
+- **Accuracy**: 87%
+- **Sensitivity**: 78% (MIBC detection)
+- **Specificity**: 87% (NMIBC detection)
+- **Balanced Accuracy:** 83%
 
 ## Clinical Interpretation
 
@@ -208,7 +207,7 @@ colnames(expression_data) <- make.names(colnames(expression_data))
 If you use stageClassifieR in your research, please cite:
 
 ```
-[Your Name] et al. (2024). stageClassifieR: Machine Learning-Based 
+Adam Mattsson et al. (2025). stageClassifieR: Machine Learning-Based 
 Bladder Cancer Stage Classification. R package version 0.1.0.
 https://github.com/yourusername/stageClassifieR
 ```
@@ -248,8 +247,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 🐛 **Bug reports**: [GitHub Issues](https://github.com/yourusername/stageClassifieR/issues)
 - 💬 **Questions**: [GitHub Discussions](https://github.com/yourusername/stageClassifieR/discussions)
-- 📧 **Email**: your.email@example.com
+- 📧 **Email**: adam.mattsson@med.lu.se
 
 ---
 
-**Developed by [Your Name]** | **Institution** | **Year**
+**Developed by Adam Mattsson** | **2025**
