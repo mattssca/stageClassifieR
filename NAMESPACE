@@ -2,5 +2,4 @@
 
 export(predict_stage)
 import(dplyr)
-import(randomForest)
 import(tibble)

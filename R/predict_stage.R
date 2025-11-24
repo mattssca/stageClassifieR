@@ -15,7 +15,7 @@
 #' @param this_threshold Numeric threshold for classification probability (default = 0.596). 
 #'   Samples with probability >= threshold are classified as MIBC, others as NMIBC.
 #'
-#' @import dplyr tibble randomForest
+#' @import dplyr tibble
 #' 
 #' @return A data frame with three columns:
 #'   \itemize{
@@ -66,6 +66,7 @@
 #' \code{\link[LundTaxR]{classify_samples}} for generating the required prediction object
 #'
 #' @export
+#' 
 predict_stage = function (these_predictions = NULL,
                           these_sample_ids = NULL,
                           expression_data = NULL,

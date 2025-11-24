@@ -16,9 +16,7 @@ Depends:
     R (>= 4.0.0)
 Imports:
     dplyr,
-    tibble,
-    randomForest,
-    stats
+    tibble
 Suggests: 
     LundTaxR,
     knitr,
