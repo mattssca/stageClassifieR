@@ -15,6 +15,8 @@
 #' @param this_threshold Numeric threshold for classification probability (default = 0.596). 
 #'   Samples with probability >= threshold are classified as MIBC, others as NMIBC.
 #'
+#' @import dplyr tibble randomForest
+#' 
 #' @return A data frame with three columns:
 #'   \itemize{
 #'     \item sample_id: Character vector of sample identifiers
@@ -69,10 +71,6 @@ predict_stage = function (these_predictions = NULL,
                           expression_data = NULL,
                           this_threshold = 0.596){
 
-
-  #load data
-  load("../stage_predict/UroStageClass.Rdata")
-  load("../stage_predict/UroStageClass_topgenes.Rdata")
 
   #set RF object
   classifier = UroStageClass

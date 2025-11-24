@@ -1,0 +1,26 @@
+Package: stageClassifieR
+Type: Package
+Title: Bladder Cancer Stage Classification (MIBC vs NMIBC)
+Version: 0.1.0
+Author: Adam Mattsson <adam.mattsson@med.lu.se>
+Maintainer: Adam Mattsson <adam.mattsson@med.lu.se>
+Description: Predicts bladder cancer stage classification as either muscle-invasive 
+    bladder cancer (MIBC) or non-muscle-invasive bladder cancer (NMIBC) using a 
+    random forest classifier trained on gene expression data and molecular signatures.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 4.0.0)
+Imports:
+    dplyr,
+    tibble,
+    randomForest,
+    stats
+Suggests: 
+    LundTaxR,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
