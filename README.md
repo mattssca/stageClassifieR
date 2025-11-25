@@ -9,6 +9,10 @@
 
 <!-- badges: end -->
 
+> **Accurate stage classification of bladder cancer using gene expression and molecular signatures**
+
+stageClassifieR applies a Random Forest-based model to distinguish muscle-invasive (MIBC) from non-muscle-invasive (NMIBC) bladder cancer. Leveraging gene expression profiles and molecular subtype information, the package delivers reliable stage predictions to support translational research and biomarker discovery.
+
 ## Overview
 
 **stageClassifieR** is an R package for predicting bladder cancer stage classification, specifically distinguishing between muscle-invasive bladder cancer (MIBC) and non-muscle-invasive bladder cancer (NMIBC). The package uses a random forest classifier trained on gene expression data and molecular signatures to provide accurate stage predictions.
